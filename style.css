@@ -17,14 +17,19 @@
   --clr-secondary-200: hsl(270, 20%, 96%);
   --clr-secondary-300: hsl(271, 36%, 24%);
   --clr-secondary-400: hsl(289, 100%, 72%);
+
+  --clr-gradient-100: #e942ff;
+  --clr-gradient-200: #8838ff;
+
+  --fs-300: clamp(0.7rem, 0.66rem + 0.2vw, 0.8rem);
+  --fs-400: clamp(0.88rem, 0.83rem + 0.24vw, 1rem);
+  --fs-500: clamp(1.09rem, 1rem + 0.47vw, 1.33rem);
+  --fs-600: clamp(1.37rem, 1.21rem + 0.8vw, 1.78rem);
+  --fs-700: clamp(1.71rem, 1.45rem + 1.29vw, 2.37rem);
+  --fs-800: clamp(2.14rem, 1.74rem + 1.99vw, 3.16rem);
+  --fs-900: clamp(2.67rem, 2.07rem + 3vw, 4.21rem);
+  --fs-1000: clamp(3.34rem, 2.45rem + 4.43vw, 5.61rem);
 }
-
-/* #### Gradients
-
-These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
-
-- Light Magenta: hsl(293, 100%, 63%)
-- Light Violet: hsl(264, 100%, 61%) */
 
 /* https://piccalil.li/blog/a-modern-css-reset */
 /* Box sizing rules */
@@ -99,4 +104,53 @@ select {
 * {
   font-size: inherit;
   font-family: var(--ff-primary-100);
+}
+
+body {
+  background-color: var(--clr-secondary-200);
+}
+
+.phone {
+  background-color: var(--clr-secondary-200);
+  border: 8px solid white;
+  width: min(350px, 100%);
+  margin: 4em auto 3em auto;
+  border-radius: 30px;
+}
+
+.phone_header {
+  background: rgb(136, 56, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(136, 56, 255, 1) 30%,
+    rgba(233, 66, 255, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  padding: 3em 1em 1em 1em;
+  border-radius: 26px 26px 0 0;
+}
+
+.phone_header > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 2px solid white;
+  margin-right: 1em;
+}
+
+.phone_header-name {
+  color: var(--clr-secondary-100);
+  text-decoration: none;
+}
+
+.header_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.phone_header-availability {
+  text-decoration: none;
+  color: var(--clr-primary-100);
+  font-size: var(--fs);
 }
