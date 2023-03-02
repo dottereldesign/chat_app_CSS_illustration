@@ -116,7 +116,7 @@ body {
   background-color: var(--clr-secondary-200);
   border: 8px solid white;
   width: min(100%, 375px);
-  margin: 2em auto 3em auto;
+  margin: 1em auto 3em auto;
   border-radius: 30px;
   position: relative;
 }
@@ -201,7 +201,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: flex-end;
-  margin: 24px 0 8px 0;
+  margin: 16px 0 8px 0;
 }
 
 .image_wrapper img {
@@ -214,32 +214,31 @@ body {
 .phone_message-received {
   background-color: hsl(276, 55%, 52%, 0.1);
   color: var(--clr-primary-200);
-  font-size: var(--fs-400);
+  font-size: var(--fs-300);
   font-weight: var(--fw-regular);
   border-radius: 16px 16px 16px 8px;
   width: 220px;
-  margin-bottom: 16px;
-  padding: 8px;
-  margin-top: 16px;
+  margin-bottom: 8px;
+  padding: 8px 12px 8px 8px;
+  margin-top: 8px;
 }
 
 .phone_message-sent {
   background-color: var(--clr-secondary-100);
   color: var(--clr-secondary-300);
-  font-size: var(--fs-400);
+  font-size: var(--fs-300);
   font-weight: var(--fw-regular);
   border-radius: 16px 16px 8px 16px;
   width: 220px;
-
-  padding: 8px;
-  margin-top: 16px;
+  padding: 8px 12px 8px 8px;
+  margin-top: 8px;
   justify-self: right;
 }
 
 .phone_message-wrapper {
   width: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .booking {
@@ -253,7 +252,7 @@ body {
   width: min(100%, 260px);
   padding: 8px;
   border-radius: 16px 16px 16px 8px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   align-items: center;
   text-decoration: none;
 }
@@ -269,7 +268,7 @@ body {
 
 .booking p {
   color: var(--clr-secondary-100);
-  font-size: var(--fs-400);
+  font-size: var(--fs-300);
   font-weight: var(--fw-regular);
   text-decoration: none;
   width: 120px;
@@ -277,7 +276,7 @@ body {
 
 .booking span {
   color: var(--clr-secondary-100);
-  font-size: var(--fs-600);
+  font-size: var(--fs-500);
   font-weight: var(--fw-bold);
   text-decoration: none;
 }
@@ -311,7 +310,7 @@ body {
 
 .phone_footer-msg p {
   color: var(--clr-primary-600);
-  font-size: var(--fs-400);
+  font-size: var(--fs-300);
   font-weight: var(--fw-regular);
 }
 
@@ -353,4 +352,13 @@ body {
   font-size: var(--fs-500);
   font-weight: var(--fw-regular);
   margin-top: 16px;
+}
+
+@media (min-width: 1110px) {
+  main {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
 }
