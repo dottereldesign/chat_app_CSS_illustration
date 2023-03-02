@@ -108,8 +108,10 @@ select {
 
 body {
   background-color: var(--clr-secondary-200);
+  padding: 0 16px;
 }
 
+/* Phone Header */
 .phone {
   background-color: var(--clr-secondary-200);
   border: 8px solid white;
@@ -156,13 +158,13 @@ body {
   margin-right: 1em;
 }
 
+.phone_header i {
+  color: white;
+}
+
 .phone_header-wrapper {
   display: flex;
   align-items: center;
-}
-
-.phone_header i {
-  color: white;
 }
 
 .fa-ellipsis-vertical {
@@ -190,11 +192,64 @@ body {
   font-size: var(--fs-400);
 }
 
+/* Phone Dialogue */
+.phone_dialogue {
+  padding: 0 16px;
+}
+
+.image_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin: 24px 0 8px 0;
+}
+
+.image_wrapper img {
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+
+.phone_message-received {
+  background-color: hsl(276, 55%, 52%, 0.1);
+  color: var(--clr-primary-200);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-r);
+  border-radius: 16px 16px 16px 12px;
+  width: 220px;
+  margin-bottom: 16px;
+  padding: 8px;
+  margin-top: 16px;
+}
+
+.phone_message-sent {
+  background-color: var(--clr-secondary-100);
+  color: var(--clr-secondary-300);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-r);
+  border-radius: 16px 16px 12px 16px;
+  width: 220px;
+
+  padding: 8px;
+  margin-top: 16px;
+  justify-self: right;
+}
+
+.phone_message-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+/* Phone Footer */
+
+/* Content */
 .content {
   display: flex;
   flex-direction: column;
-
-  margin-bottom: 4em;
+  width: min(100%, 650px);
+  margin: 0 auto 4em auto;
   padding: 0 16px;
 }
 
