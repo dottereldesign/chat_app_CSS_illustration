@@ -215,8 +215,8 @@ body {
   background-color: hsl(276, 55%, 52%, 0.1);
   color: var(--clr-primary-200);
   font-size: var(--fs-400);
-  font-weight: var(--fw-r);
-  border-radius: 16px 16px 16px 12px;
+  font-weight: var(--fw-regular);
+  border-radius: 16px 16px 16px 8px;
   width: 220px;
   margin-bottom: 16px;
   padding: 8px;
@@ -227,8 +227,8 @@ body {
   background-color: var(--clr-secondary-100);
   color: var(--clr-secondary-300);
   font-size: var(--fs-400);
-  font-weight: var(--fw-r);
-  border-radius: 16px 16px 12px 16px;
+  font-weight: var(--fw-regular);
+  border-radius: 16px 16px 8px 16px;
   width: 220px;
 
   padding: 8px;
@@ -240,6 +240,57 @@ body {
   width: 100%;
   display: flex;
   justify-content: end;
+}
+
+.booking {
+  display: flex;
+  background: rgb(136, 56, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 66, 255, 1) 30%,
+    rgba(136, 56, 255, 1) 100%
+  );
+  width: min(100%, 260px);
+  padding: 8px;
+  border-radius: 16px 16px 16px 8px;
+  margin-bottom: 16px;
+  align-items: center;
+  text-decoration: none;
+}
+
+.booking::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(0, 0%, 100%, 0.5);
+  border-radius: 100%;
+  margin-right: 12px;
+}
+
+.booking p {
+  color: var(--clr-secondary-100);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+  text-decoration: none;
+  width: 120px;
+}
+
+.booking span {
+  color: var(--clr-secondary-100);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-bold);
+  text-decoration: none;
+}
+
+.phone_dialogue a {
+  text-decoration: none;
+}
+
+.booking_price-wrapper {
+  display: flex;
+
+  width: 80px;
+  justify-content: flex-end;
 }
 
 /* Phone Footer */
