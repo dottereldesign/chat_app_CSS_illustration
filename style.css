@@ -288,12 +288,50 @@ body {
 
 .booking_price-wrapper {
   display: flex;
-
   width: 80px;
   justify-content: flex-end;
 }
 
 /* Phone Footer */
+.phone_footer {
+  display: flex;
+
+  padding: 16px;
+}
+
+.phone_footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: white;
+  padding: 8px 8px 8px 24px;
+  border-radius: 24px;
+}
+
+.phone_footer-msg p {
+  color: var(--clr-primary-600);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+}
+
+.phone_footer-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+}
+
+.phone_footer i {
+  color: white;
+}
+
+.phone_footer a {
+  text-decoration: none;
+}
 
 /* Content */
 .content {
